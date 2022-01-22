@@ -265,36 +265,37 @@ This is a site for the sale of things... ">
     <a href="#catalog"><section class="slider"></section></a>
 
  <section class="news">
-        <div class="container_block">
-            <h3 class="title_news">Услуги</h3>
-            <div class="news-content">
+ <h3 class="title_news">Услуги</h3>
+        <div class="container_block">      
+            <div class="news-content">        
                 <div class="block-news">
                     <h2>Декоративная штукатурка</h2>
-                    <h3>Title of the news</h3>
-                    <h4>1 september 2021</h4>
-                    <a href="#">More Info</a>
-                    <p style="margin: 0px"><img src="img/2.png" alt=""></p>
+                    <p>Создание рельефной структуры поверхности (декоративная штукатурка).
+Декоративная штукатурка стен на сегодняшний день является прекрасной альтернативой обоям и краскам для отделки интерьеров.</p>
+                    <p style="margin: 0px"><img  height="200px;" src="img/sozd.jpg" alt=""></p>
+                    <h3>Цену уточняйте</h3>
+                    <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
+                </div>            
+                <div class="block-news">
+                    <h2>Грунтовка</h2>
+                    <p>Грунтовка для штукатурки стен, представляет собой непрозрачную жидкость без характерного запаха, а грунтование – это процесс нанесения и распределения данной жидкости на используемую поверхность.</p>
+                    <p style="margin: 0px"><img  height="200px;" src="img/gr.jpg" alt=""></p>
+                    <h3>Цену уточняйте</h3>
+                    <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
+                </div>
+                <div class="block-news">
+                    <h2>Штукатурка стен и откосов (окна, двери)</h2>
+                    <p>После установки и окончательного закрепления окон и дверей, подготовки и выравнивания стен, а также их предварительной отделки, проводится штукатурка откосов. Этот традиционный метод выравнивания поверхности с помощью специальных сухих смесей помогает сделать интерьер завершенным и эстетичным.</p>
+                    <p style="margin: 0px"><img  height="200px;" src="img/sht.jpg" alt=""></p>
+                    <h3>Цену уточняйте</h3>
+                    <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
                 </div>
                 <div class="block-news">
                     <h2>Шпатлевка,грунтовка</h2>
                     <p>Грунтовка для штукатурки стен, представляет собой непрозрачную жидкость без характерного запаха, а грунтование – это процесс нанесения и распределения данной жидкости на используемую поверхность.</p>
                     <p style="margin: 0px"><img  height="200px;" src="img/gr.jpg" alt=""></p>
                     <h3>Цену уточняйте</h3>
-                    <button class="btn-form" name="btn-form">Написать &#128172;</button>
-                </div>
-                <div class="block-news">
-                    <h2>News №3</h2>
-                    <h3>Offline events</h3>
-                    <h4>21 april 2021</h4>
-                    <a href="#">More Info</a>
-                    <p style="margin: 0px"><img src="img/4.png" alt=""></p>
-                </div>
-                <div class="block-news">
-                    <h2>News №4</h2>
-                    <h3>Qui officia deserunt</h3>
-                    <h4>17 march 2021</h4>
-                    <a href="#">More Info</a>
-                    <p style="margin: 0px"><img src="img/3.png" alt=""></p>
+                    <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
                 </div>
             </div>
         </div>
@@ -314,9 +315,9 @@ This is a site for the sale of things... ">
                             '</textarea>'?></a>
                             <div class="content_name" property="gr:name"><?=$oneNews['name_cards'];?></div>
                             <div class="content_price" property="gr:hasPriceSpecification" typeof="gr:UnitPriceSpecification" style="margin-left:10px;"><span property="gr:hasCurrency">$</span><span property="gr:hasCurrencyValue"><?=$oneNews['price'];?></span></div>
-                                <div class="add_cart">
-                                    <input name="badr" type="submit" value="В корзину">&#128722;
-                                </div>
+                               
+                                    <input style="border:none" class="add_cart" name="badr" type="submit" value="В корзину &#128722;">
+              
                         </div>
                     </form>
                 <?php } ?>
