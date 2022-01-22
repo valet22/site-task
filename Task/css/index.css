@@ -98,31 +98,7 @@ a {
     color: #D6A279;
 }
 
-/*----------------
-car and whishlist
-------------------*/
 
-.wishlist {
-    position: relative;
-    display: inline-block;
-    margin: auto 25px;
-}
-
-.wishlist-number {
-    background: #D6A279;
-    max-width: 15px;
-    min-width: 15px;
-    height: 20px;
-    color: #fff;
-    border-radius: 10px;
-    position: absolute;
-    top: -5px;
-    left: 22px;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    padding: 0 2px;
-}
 
 .cart {
     position: relative;

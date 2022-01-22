@@ -272,28 +272,35 @@ This is a site for the sale of things... ">
                     <h2>Декоративная штукатурка</h2>
                     <p>Создание рельефной структуры поверхности (декоративная штукатурка).
 Декоративная штукатурка стен на сегодняшний день является прекрасной альтернативой обоям и краскам для отделки интерьеров.</p>
-                    <p style="margin: 0px"><img  height="200px;" src="img/sozd.jpg" alt=""></p>
+                    <img  height="200px;" src="img/sozd.jpg" alt="">
                     <h3>Цену уточняйте</h3>
                     <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
                 </div>            
                 <div class="block-news">
                     <h2>Грунтовка</h2>
                     <p>Грунтовка для штукатурки стен, представляет собой непрозрачную жидкость без характерного запаха, а грунтование – это процесс нанесения и распределения данной жидкости на используемую поверхность.</p>
-                    <p style="margin: 0px"><img  height="200px;" src="img/gr.jpg" alt=""></p>
+                    <img  height="200px;" src="img/gr.jpg" alt="">
                     <h3>Цену уточняйте</h3>
                     <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
                 </div>
                 <div class="block-news">
                     <h2>Штукатурка стен и откосов (окна, двери)</h2>
                     <p>После установки и окончательного закрепления окон и дверей, подготовки и выравнивания стен, а также их предварительной отделки, проводится штукатурка откосов. Этот традиционный метод выравнивания поверхности с помощью специальных сухих смесей помогает сделать интерьер завершенным и эстетичным.</p>
-                    <p style="margin: 0px"><img  height="200px;" src="img/sht.jpg" alt=""></p>
+                    <img  height="200px;" src="img/sht.jpg" alt="">
                     <h3>Цену уточняйте</h3>
                     <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
                 </div>
                 <div class="block-news">
-                    <h2>Шпатлевка,грунтовка</h2>
-                    <p>Грунтовка для штукатурки стен, представляет собой непрозрачную жидкость без характерного запаха, а грунтование – это процесс нанесения и распределения данной жидкости на используемую поверхность.</p>
-                    <p style="margin: 0px"><img  height="200px;" src="img/gr.jpg" alt=""></p>
+                    <h2>Облицовка поверхностей керамогранитом</h2>
+                    <p>Ремонтные работы в квартирах и офисах предполагают облицовку поверхностей натуральными и прочными материалами, к числу которых относится керамогранит. Он является наиболее подходящим выбором для отделки стен, пола, бордюров и каминов. </p>
+                    <img  height="200px;" src="img/obl.jpg" alt="">
+                    <h3>Цену уточняйте</h3>
+                    <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
+                </div>
+                <div class="block-news">
+                    <h2>Облицовка поверхностей керамогранитом</h2>
+                    <p>Ремонтные работы в квартирах и офисах предполагают облицовку поверхностей натуральными и прочными материалами, к числу которых относится керамогранит. Он является наиболее подходящим выбором для отделки стен, пола, бордюров и каминов. </p>
+                    <img  height="200px;" src="img/obl.jpg" alt="">
                     <h3>Цену уточняйте</h3>
                     <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
                 </div>
@@ -301,9 +308,10 @@ This is a site for the sale of things... ">
         </div>
     </section>
     <section class="catalog" id="catalog">
+    <il><p class="navig_catalog_active">Каталог</p></il>   
         <div class="container_block">
             <div class="navigation_catalog">
-                <il><a class="navig_catalog_active" href="#">Каталог</a></il>   
+                
             </div>
             <!-----------------------------main content-------------------->
             <div class="content_main">
