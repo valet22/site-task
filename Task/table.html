@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="foaf: http://xmlns.com/foaf/0.1/
+          dc: http://purl.org/dc/terms/
+           gr: http://purl.org/goodrelations/v1#
+           xsd: http://www.w3.org/2001/XMLSchema#
+           og: https://ogp.me/ns#
+           ">
+
+<head itemscope itemtype="http://schema.org/WPHeader">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/github-icon-orange.png" type="image/x-icon">
+    <title itemprop="headline" property="dc:title">Name Of The Site | Table</title>
+    <meta itemprop="description" name="description" content="
+This is a site for the sale of things... ">
+    <!--   CSS style -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="js/table.js"></script>
+</head>
+
+<body>
+    <!--  navigation  -->
+    <nav class="nav">
+        <div style="font-size: 14px;" class="container">
+            <div class="navig">
+                <il><a class="nav__a" itemprop="url" rel="foaf:page" href="index.php">Главная</a></il>
+                <il><a class="nav__a" itemprop="url" rel="foaf:page" href="table.html">Контакты</a></il>
+                <il><a class="nav__a" itemprop="url" rel="foaf:page" href="about.html">О нас</a></il>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header class="header" >
+        <div class="container">
+            <div style="display: flex; height: 30px; margin: auto 75px;">
+                <img src="img/telephone.svg" alt="telephone svg" style="width: 26px; height:25px">
+                <div class="number_telphone" style="padding: 0 10px;"><a itemprop="telephone" href="tel:+375296532270">+375296532270</a></div>
+            </div>
+            <div style="margin: auto auto;margin-right:30%;">
+                <div class="name_site">
+                    <!--link to site: #-->
+                    <a class="sitename" href="index.php" itemprop="name">ОДО "Экспресс"</a>
+                    <link itemprop="url" href="">
+                    <link itemprop="address" content="Belarus, Gomel">
+                </div>
+            </div>
+            <div class="cart-product" style="margin: auto 25px; display: flex">             
+                <!--cart(may be made working with js)-->
+                <div class="cart">
+                    <a href=""><img src="img/cart-white.png" alt="cart"></a>
+                    <span class="cart-number">01</span>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section style="background-color:#f3f3f3; ;"><div id="feedback-form-with-author"style="max-width:1170px; margin:0 auto;display:flex;justify-content:space-between;">  
+        <div><h2 class="title-form"style="color:black" >Контакты</h2>
+         <p style= "font-size: 14px;font-weight: 500; color:black" >&#127970;<b> Компания:</b> ОДО Экспресс</p>
+         <p style="font-size: 14px;font-weight: 500;color:black" >&#128359;<b> Пн-Пт</b> 8:00-17:00</p>
+         <p style="font-size: 14px;font-weight: 500;color:black" >&#128241;<b> Телефоны:</b> +375232418934 (факс)
+         <br style="margin-top: 20px;">+375296532270</p>
+          <p style="font-size: 14px;font-weight: 500;color:black" >&#128104;<b>Контактное лицо:</b> Александр Валетко</p>
+          <p style="font-size: 14px;font-weight: 500;color:black" >	
+            &#128205;<b>Адрес:</b> ул.Котовского 82,Гомель,Беларусь</p>
+  
+      </div>  
+      <div class="bg-form" style="padding:0; width:800px;"> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2075.5362345621725!2d30.97832017061152!3d52.42740426989023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d469bbc53f9dcb%3A0x1ae8e1aaabc31796!2z0K3QmtCh0J_QoNCV0KHQoSDQntCU0J4!5e0!3m2!1sru!2sby!4v1642774912671!5m2!1sru!2sby" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      
+      </div>
+  
+      </div>
+  </div>
+  <hr>
+  <div class="bg-form"style="padding:0;">
+      <form action="#">
+              <h2 class="title-form"style="color:black" >Свяжитесь с нами</h2>
+              <input type="login" id="username" placeholder="Имя" minlength="3" required>
+              <input type="email" id="email" placeholder="Email" required>
+              <input type="tel" id="telephone" placeholder="Ваш телефон(+375-XX-XXX-XX-XX)" pattern="+375-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+              <button class="btn-form" name="btn-form">Отправить &#128172;</button>
+              <h5 id="testtext" style="margin: 0px 0px; text-align: left;"></h5>
+         
+      </form>
+  </div>
+      </section>
+    <!--------------footer----------------->
+    <footer class="footer" style="bottom:0;">
+        <div class="container">
+            <div class="social_network">
+                <p style="color: white; font-weight: bold;">Social Network:</p>
+                <p>
+                    <a href="https://vk.com/ferqileo" target="_blank"><img src="img/vk-icon.png" alt="Vk" title="VK"></a>
+                </p>
+            </div>
+            <div class="footer_info" typeof="Person" style="text-align: center;">
+                <p id="footer_date_create"><time datetime="2021-10-24">Date of creation:</time> <span property="dc:created">2021-11-05</span></p>
+                <!--  in JS contains  -->
+                <p id="footer_date">Today's date:</p>
+            </div>
+            <div class="owner">
+                <p id="footer_author" vocab="http://schema.org/">Createor: <span property="name">VLADOS</span></p>
+                <!--version-->
+                <p id="footer_version">Version: 0.3a</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script src="js/index.js"></script>
+</body></html>

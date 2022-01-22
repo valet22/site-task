@@ -1,0 +1,27 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://rdfa.info/play/>
+   dc:title "Name Of The Site | Index";
+   foaf:page <https://rdfa.info/play/index.html>;
+   foaf:page <https://rdfa.info/play/table.html>;
+   foaf:page <https://rdfa.info/play/about.html>;
+   rdfa:usesVocabulary schema: .
+_:1 
+   rdf:type schema:ItemList;
+   schema:itemListElement "Air Jordan XXXVI \"First Light"";
+   schema:itemListElement "Air Jordan 1 Hi FlyEase";
+   schema:itemListElement "Air Jordan 1 Zoom CMFT";
+   schema:itemListElement "Air Jordan 13 Centre Court";
+   schema:itemListElement "Air Jordan 13 Retro Low";
+   schema:numberOfItems "155";
+   schema:numberOfItems "101";
+   schema:numberOfItems "136";
+   schema:numberOfItems "209";
+   schema:numberOfItems "354" .
+_:2 
+   dc:created "2021-10-24";
+   schema:name "Drapeza Igor" .

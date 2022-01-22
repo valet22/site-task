@@ -1,0 +1,24 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://rdfa.info/play/>
+   dc:title "Name Of The Site | Index";
+   foaf:page <https://rdfa.info/play/index.html>;
+   foaf:page <https://rdfa.info/play/table.html>;
+   foaf:page <https://rdfa.info/play/about.html>;
+   rdfa:usesVocabulary schema: .
+_:1 
+   rdf:type schema:Person;
+   schema:image <https://rdfa.info/play/img/1.png>;
+   schema:name "Igor";
+   schema:familyName "Drapeza";
+   schema:email "Email: drapezaoski96@mail.ru";
+   schema:jobTitle "Job: None";
+   schema:homeLocation "Location: Belarus, Gomel";
+   schema:knowsLanguage "Language: english and russian." .
+_:2 
+   dc:created "2021-10-24";
+   schema:name "Drapeza Igor" .

@@ -1,0 +1,199 @@
+body {
+    font-size: 14px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: #252525;
+}
+
+.container {
+    /*	container for limiting the width */
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+}
+
+.container_block {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+    display: block;
+}
+
+/*
+-----------------------
+-------navigation------
+-----------------------
+*/
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: #252525;
+    margin: auto auto;
+    font-weight: 500;
+    justify-content: space-between;
+    /*    may be can use fixed/sticky*/
+    position: relative;
+    top: 0px;
+    z-index: 999;
+}
+
+.navig {
+    right: 0;
+    margin: auto auto;
+}
+
+.nav__a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s linear;
+    margin: 0 16px;
+}
+
+.nav__a:hover {
+    color: #D6A279;
+}
+
+/*
+---------------------
+--------header-------
+---------------------
+*/
+
+.header {
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.number_telphone {
+    color: black;
+    left: 0;
+    margin: auto auto;
+}
+
+.name_site {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+.sitename {
+    color: black;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.sitename:hover {
+    color: #D6A279;
+}
+
+/*----------------
+car and whishlist
+------------------*/
+
+.wishlist {
+    position: relative;
+    display: inline-block;
+    margin: auto 25px;
+}
+
+.wishlist-number {
+    background: #D6A279;
+    max-width: 15px;
+    min-width: 15px;
+    height: 20px;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 22px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 2px;
+}
+
+.cart {
+    position: relative;
+    display: inline-block;
+    margin: auto 25px;
+}
+
+.cart-number {
+    background: #D6A279;
+    max-width: 15px;
+    min-width: 15px;
+    height: 20px;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 22px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 2px;
+}
+
+.price {
+    margin: auto auto;
+    font-size: 14px;
+    color: #D6A279
+}
+
+/*-----------------
+--------footer-----
+-----------------*/
+
+.footer {
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    position: static;
+   left:0px;
+   bottom:0px;
+}
+.social_network {
+    margin-left: 10px;
+    float: left;
+}
+.social_network img {
+    width: 32px;
+    height: 32px;
+    margin: 0px 5px;
+}
+
+.footer_info {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    margin: auto auto;
+    float: none;
+}
+
+.owner {
+    font-weight: 600;
+    font-size: 12px;
+    margin: auto 0px;
+    margin-right: 10px;
+    float: right;
+    text-align: right;
+}
+
+#footer_date,
+#footer_date_create,
+#footer_author,
+#footer_version {
+    margin: 5px auto;
+}

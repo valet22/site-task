@@ -1,0 +1,55 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+
+<https://rdfa.info/play/>
+   dc:title "Name Of The Site | Index";
+   foaf:page <https://rdfa.info/play/index.html>;
+   foaf:page <https://rdfa.info/play/table.html>;
+   foaf:page <https://rdfa.info/play/about.html>;
+   rdfa:usesVocabulary schema: .
+_:1 
+   rdf:type gr:Offering;
+   gr:name "Parturient Venenatis Etiam";
+   gr:hasPriceSpecification _:2;
+   foaf:page <https://rdfa.info/play/#> .
+_:2 
+   rdf:type gr:UnitPriceSpecification;
+   gr:hasCurrency "$";
+   gr:hasCurrencyValue "202.87" .
+_:3 
+   rdf:type gr:Offering;
+   gr:name "Malesuada Fermentum Tortor";
+   gr:hasPriceSpecification _:4;
+   foaf:page <https://rdfa.info/play/#> .
+<https://rdfa.info/play/#>
+   <https://ogp.me/ns#image> <https://rdfa.info/play/img/second.png>;
+   <https://ogp.me/ns#image> <https://rdfa.info/play/img/three.png>;
+   <https://ogp.me/ns#image> <https://rdfa.info/play/img/four.png> .
+_:4 
+   rdf:type gr:UnitPriceSpecification;
+   gr:hasCurrency "$";
+   gr:hasCurrencyValue "106.58" .
+_:5 
+   rdf:type gr:Offering;
+   gr:name "Magna Malesuada";
+   gr:hasPriceSpecification _:6;
+   foaf:page <https://rdfa.info/play/#> .
+_:6 
+   rdf:type gr:UnitPriceSpecification;
+   gr:hasCurrency "$";
+   gr:hasCurrencyValue "169.43" .
+_:7 
+   rdf:type gr:Offering;
+   gr:hasPriceSpecification _:8;
+   foaf:page <https://rdfa.info/play/#> .
+_:8 
+   rdf:type gr:UnitPriceSpecification;
+   gr:hasCurrency "$";
+   gr:hasCurrencyValue "276.43" .
+_:9 
+   dc:created "2021-10-24";
+   schema:name "Drapeza Igor" .

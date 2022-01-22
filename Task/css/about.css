@@ -1,0 +1,80 @@
+.content {
+	background-color: #D6A279;
+	padding: 20px 0px;
+	color: black;
+}
+
+.infoauthor {
+    width: 100%;
+    max-width: 800px;
+    margin: auto auto;
+}
+
+#image-author {
+    width: 50%;
+}
+#information-about-author {
+	color: black;
+    width: 50%;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 60px;
+}
+
+
+form {
+    margin: auto auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.bg-form {
+    padding: 10%;
+}
+
+.bg-form input {
+    margin: 10px 0;
+}
+
+.title-form {
+    text-align: center;
+    font-size: 24px;
+}
+
+input {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    width: 100%;
+    padding: 20px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: .2s;
+}
+
+input:focus {
+    border-color: #3260c7;
+    box-shadow: 0 0 20px rgba(128, 157, 255, 0.1);
+}
+
+.btn-form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+	font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #E8CFBC;
+    transition: .5s;
+}
+
+.btn-form:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* input:focus */
