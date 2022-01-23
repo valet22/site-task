@@ -166,7 +166,6 @@ This is a site for the sale of things... ">
            }
   </style>
 </head>
-
 <body>
     <?php 
         include('include/connection.php');
@@ -228,19 +227,19 @@ This is a site for the sale of things... ">
 
                 $result = mysqli_query($connection, "SELECT * FROM `cards` WHERE id = $id");
                 while ( $record = mysqli_fetch_assoc( $result ))
-                    {
-                        $id_element = $record['id'];
-                        echo "<table>
-                            <tr>
-                                <td><img class='content_img' src='img/". $record['img']. "' alt='first'>
-                                </td>
-                                <td>".$record['name_cards']."</td>
-                                <td>".$record['price']."</td>
-                                <td>4</td>
-                            </tr></table>";
-                    }
+                {
+                    $id_element = $record['id'];
+                    echo "<table id='table-cart'>
+                        <tr>
+                            <td style='width:128px;'><img class='content_img' style='padding-top:0px' src='img/". $record['img']. "' alt='first' width='128px'>
+                            </td>
+                            <td style='text-align:center;'>".$record['name_cards']."</td>
+                            <td>".$record['price']." BYN</td>
+                            <td><button onclick=functionDelete()>Удалить</button></td>
+                        </tr></table>";
                 }
-            ?>
+            }
+        ?>
                   </div>
                 </div>
               </div>
@@ -248,22 +247,15 @@ This is a site for the sale of things... ">
           </div>
                 </div>
                 <!--total price(may be made working with js)-->
-                <div class="price" style="margin-left:10px;"><a href="login.php">Вход</a></div>
-                <div class="price" style="margin-left:10px;">
-                    <?php
-                        if(empty($_SESSION['name'])){
-                            echo "Вы не авторизованны";
-                        }
-                        else echo $_SESSION['name'];
-                    ?>
-                </div>
+                <div class="price" style="margin-left:10px;"><a href="login.php">Админ панель</a></div>
+             
             </div>
         </div>
     </header>
 
     <!-- slider(or static photo) -->
     <a href="#catalog"><section class="slider"></section></a>
-
+   
  <section class="news">
  <h3 class="title_news">Услуги</h3>
         <div class="container_block">      
@@ -303,12 +295,13 @@ This is a site for the sale of things... ">
                     <img  height="200px;" src="img/obl.jpg" alt="">
                     <h3>Цену уточняйте</h3>
                     <button style="width:200px;border-radius: 150px;"class="btn-form" name="btn-form">Написать &#128172;</button>
+                    
                 </div>
             </div>
         </div>
     </section>
     <section class="catalog" id="catalog">
-    <il><p class="navig_catalog_active">Каталог</p></il>   
+    <il><p id="navig_catal" class="navig_catalog_active">Каталог</p></il>   
         <div class="container_block">
             <div class="navigation_catalog">
                 
@@ -324,7 +317,7 @@ This is a site for the sale of things... ">
                             <div class="content_name" property="gr:name"><?=$oneNews['name_cards'];?></div>
                             <div class="content_price" property="gr:hasPriceSpecification" typeof="gr:UnitPriceSpecification" style="margin-left:10px;"><span property="gr:hasCurrency">$</span><span property="gr:hasCurrencyValue"><?=$oneNews['price'];?></span></div>
                                
-                                    <input style="border:none" class="add_cart" name="badr" type="submit" value="В корзину &#128722;">
+                                    <input style="width:200px;border-radius:150px;border:none" class="add_cart" name="badr" type="submit" value="В корзину &#128722;">
               
                         </div>
                     </form>
@@ -369,6 +362,28 @@ This is a site for the sale of things... ">
         document.querySelector('#openModal').style.marginLeft = '0px';
       });
     });
+    let allCatalog = document.querySelectorAll('.add_cart');
+        let numberCatalog = document.getElementById('navig_catal');
+        console.log(allCatalog.length);
+        if (allCatalog.length == 1) {
+        numberCatalog.innerHTML = "Каталог [" + allCatalog.length + " товар]";
+        }
+        else if (allCatalog.length < 5) {
+        numberCatalog.innerHTML = "Каталог [" + allCatalog.length + " товара]";
+        }
+        else if (allCatalog.length < 10) {
+        numberCatalog.innerHTML = "Каталог [" + allCatalog.length + " товаров]";
+        }
+        else {
+            numberCatalog.innerHTML = "Каталог [" + allCatalog.length + " товара]";
+            console.log("else");
+        }
+        function functionDelete() {
+            table = document.getElementById("table-cart");
+            table.style.visibility = "hidden";
+console.log("TTT");
+        }
+
   </script>
     <script src="js/index.js"></script>
 </body></html>

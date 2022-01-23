@@ -46,7 +46,7 @@
     width: 100%;
     padding: 20px;
     margin: 15px 0;
-    background-color: #E8CFBC;
+    background-color: #D6A279;
     transition: .5s;
 }
 .news-content {
@@ -178,6 +178,7 @@
     font-weight: 600;
     padding-top: 20px;
     height: 50px;
+    text-align: center;
 }
 
 .content_price {
@@ -185,19 +186,24 @@
     font-size: 16px;
     font-weight: 600;
     padding: 0 0;
+    text-align: center;
 }
 
 .add_cart {
-    background-color: #D6A279;
-    font-weight: bold;
-    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+	font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
     color: black;
-    width: 115px;
-    height: 30px;
-    border-radius: 10px;
-    text-align: center;
-    transition: .3s linear;
-    margin: 13px 0;
+    width: 100%;
+    padding: 20px;
+    margin: 15px 0;
+    margin-left: 10%;
+
+    background-color: #D6A279;
+    transition: .5s;
 }
 
 .add_cart p {
